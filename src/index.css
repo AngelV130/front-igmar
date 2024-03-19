@@ -1,0 +1,13 @@
+/* index.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* O si estás utilizando import en un archivo CSS */
+/* import 'tailwindcss/base'; */
+/* import 'tailwindcss/components'; */
+/* import 'tailwindcss/utilities'; */
+
+.active{
+    color: rgb(59 130 246 / var(--tw-text-opacity));
+}
