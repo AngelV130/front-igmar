@@ -12,7 +12,7 @@ const SesionContext = createContext<SesionContextType>({
 const SesionProvider = ({ children }: { children: React.ReactNode }) => {
   const [user, setUser] = useState<User | null | undefined>(null);
   const [{data, loading, error}, executeRequest] = useAxios({
-        url: "http://143.198.233.222:8080/api/perfil",
+        url: "http://146.190.47.242:8080/api/perfil",
         method: "GET",
         headers: { 'Authorization': `Bearer ${localStorage.getItem("token")}` },
     }, {manual: true,useCache: false});

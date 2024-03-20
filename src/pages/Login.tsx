@@ -13,7 +13,7 @@ export default function Login() {
     const [data, setData] = useState({email: "", password: "",})
     const [captcha, setCaptcha] = useState("")
     const [{data:response, error}, send] = useAxios({
-        url: "http://143.198.233.222:8080/api/login",
+        url: "http://146.190.47.242:8080/api/login",
         method: "POST",
         data: {
             ...data,
