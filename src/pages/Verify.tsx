@@ -12,7 +12,7 @@ export default function Verify() {
     const {id} = useParams()
     const [code, setCode] = useState("")
     const [{data, error, loading}, send] = useAxios({
-        url: `http://137.184.85.23:8080/api/verify/code/${id}?expires=${query[0].get('expires')}&signature=${query[0].get('signature')}`,
+        url: `http://143.198.233.222:8080/api/verify/code/${id}?expires=${query[0].get('expires')}&signature=${query[0].get('signature')}`,
         method: "POST",
         data: {code}
     },

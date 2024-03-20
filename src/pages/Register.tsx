@@ -14,7 +14,7 @@ export default function Register() {
     const [data, setData] = useState({email: "", password: "",pasword_confirmation: "", name: ""})
     const [captcha, setCaptcha] = useState("")
     const [{data:response, error}, send] = useAxios({
-        url: "http://137.184.85.23:8080/api/register",
+        url: "http://143.198.233.222:8080/api/register",
         method: "POST",
         data: {
             ...data,
